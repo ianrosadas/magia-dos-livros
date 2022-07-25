@@ -12,7 +12,7 @@ import lombok.Data;
 public class Usuario {
     private String r;
     private Genero genero;
-    private Perfil  perfil;
+    private Perfil perfil;
     private Boolean doador;
     private Date dataDeNas;
     private Date dataDeCadastro;
