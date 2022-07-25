@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Usuario {
+public class Usuario extends Pessoa{
     private String r;
     private Genero genero;
     private Perfil perfil;
