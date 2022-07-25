@@ -1,9 +1,6 @@
 package com.eternos.magiadoslivros.domain.model;
 
 import java.util.Date;
-
-import com.eternos.magiadoslivros.domain.model.Perfil;
-
 import lombok.Builder;
 import lombok.Data;
 
