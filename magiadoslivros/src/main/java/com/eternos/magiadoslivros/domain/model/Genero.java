@@ -1,13 +1,14 @@
 package com.eternos.magiadoslivros.domain.model;
 
 public enum Genero {
-    MASCULINO("Masculino"),
-    FEMININO("Feminino"),
-    HOMOSSEXUAL("Homossexual"),
-    BISSEXUAL("Bissexual"),
-    PANSSEXUAL("Panssexual"),
-    TRANSSEXUAL("Transsexual"),
-    INDEFINIDO("Indefinido");
+    HOMEMCIS("Homem cisgênero"),
+    MULHERCIS("Mulher cisgênero"),
+    HOMEMTRANS("Homem transgênero"),
+    MULHERTRANS("Mulher transgênero"),
+    NAOBINARIO("Não-binário"),
+    INTERSEXO("Intersexo"),
+    AGENERO("Agênero"),
+    OUTRO("Outro gênero não listado");
 
     private String descricao;
 
