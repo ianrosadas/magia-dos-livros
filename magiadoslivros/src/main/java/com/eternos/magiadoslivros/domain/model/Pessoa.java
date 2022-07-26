@@ -1,6 +1,6 @@
 package com.eternos.magiadoslivros.domain.model;
 
-public abstract class Pessoa {
+public class Pessoa {
     protected Integer id;  
     protected String nome;  
     protected String cpf;  
