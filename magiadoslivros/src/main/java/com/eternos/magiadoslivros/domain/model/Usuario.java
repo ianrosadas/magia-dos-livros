@@ -15,18 +15,25 @@ import javax.persistence.Table;
 public class Usuario extends Pessoa{
     @Column(name="nome")
     private String nome;
+
     @Column(name="rg")
     private String rg;
+
     @Column(name="cpf")
     protected String cpf; 
+
     @Column(name="genero")
     private Genero genero;
+
     @Column(name="perfil")
     private Perfil perfil;
+
     @Column(name="doador")
     private Boolean doador;
+
     @Column(name="dataDeNas")
     private Date dataDeNas;
+    
     @Column(name="dataDeCadastro")
     private Date dataDeCadastro;
     
