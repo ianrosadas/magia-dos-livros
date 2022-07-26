@@ -10,6 +10,7 @@ public class Livro {
     private String tagEstoque;
     private String descricao;
     private String isbn;
+    private Integer quantLivros;
     private Double valorRecebimento;
     private Double valorVenda;
 
