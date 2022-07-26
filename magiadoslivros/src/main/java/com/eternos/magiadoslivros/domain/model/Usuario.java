@@ -9,6 +9,7 @@ import lombok.Data;
 public class Usuario extends Pessoa{
     private String nome;
     private String rg;
+    protected String cpf; 
     private Genero genero;
     private Perfil perfil;
     private Boolean doador;
