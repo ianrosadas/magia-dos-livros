@@ -19,16 +19,22 @@ public class Livro {
     @Column(name="idLivro")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idLivro;
+
     @Column(name="tagEstoque")
     private String tagEstoque;
+
     @Column(name="descricao")
     private String descricao;
+
     @Column(name="isbn")
     private String isbn;
+
     @Column(name="quantLivros")
     private Integer quantLivros;
+
     @Column(name="valorRecebimento")
     private Double valorRecebimento;
+    
     @Column(name="valorVenda")
     private Double valorVenda;
 

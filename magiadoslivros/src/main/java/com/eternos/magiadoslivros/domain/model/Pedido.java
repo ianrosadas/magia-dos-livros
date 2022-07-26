@@ -23,20 +23,28 @@ public class Pedido {
    @Column(name="idVenda")
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Integer idVenda;
+
    @Column(name="valorVenda", nullable = false)  
    private Double valorVenda;
+
    @Column(name="enderecoEntrega")
    private String enderecoEntrega;
+
    @Column(name="formaDePgto") 
    private String formaDePgto;
+
    @Column(name="parcelas")
    private Integer parcelas;
+
    @Column(name="dataVenda")
    private Date dataVenda;
+
    @Column(name="dataPgto")
    private Date dataPgto;
+
    @Column(name="dataEntrega") 
    private Date dataEntrega;
+   
    @Default
    private Boolean vendaCancelada = false;
 

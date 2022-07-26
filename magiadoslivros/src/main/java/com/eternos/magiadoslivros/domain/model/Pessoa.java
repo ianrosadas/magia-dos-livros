@@ -13,13 +13,17 @@ public class Pessoa {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Integer id;  
+    protected Integer id;
+
     @Column(name="endereco")
-    protected String endereco; 
+    protected String endereco;
+
     @Column(name="email")
-    protected String email; 
+    protected String email;
+
     @Column(name="telefone") 
-    protected String telefone;  
+    protected String telefone;
+      
     @Column(name="observacao")
     protected String observacao;
 }
