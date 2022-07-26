@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class Fornecedor extends Pessoa {
+    private String nomeFantasia;
     private String razaoSocial;
     private String cnpj;
     private String insEstadual;
