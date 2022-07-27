@@ -8,11 +8,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
+//@Entity
 @Table(name = "Usuario")
-@Data
-@Builder
 public class Usuario extends Pessoa{
+    Usuario(Integer id, String endereco, String email, String telefone, String observacao) {
+        super(id, endereco, email, telefone, observacao);
+        //TODO Auto-generated constructor stub
+    }
+
     @Column(name="nome")
     private String nome;
 
