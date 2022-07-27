@@ -7,22 +7,29 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Entity
+//@Entity
 @Table(name = "fornecedor")
-@Data
-@Builder
 public class Fornecedor extends Pessoa {
-    @Column(name="nomeFantasia")
+  
+    Fornecedor(Integer id, String endereco, String email, String telefone, String observacao) {
+        super(id, endereco, email, telefone, observacao);
+        //TODO Auto-generated constructor stub
+    }
+
+    @Column(name="nome_fantasia")
     private String nomeFantasia;
 
-    @Column(name="razaoSocial")
+    @Column(name="razao_social", nullable = false)
     private String razaoSocial;
 
-    @Column(name="cnpj")
+    @Column(name="cnpj", nullable = false)
     private String cnpj;
 
-    @Column(name="insEstadual")
+    @Column(name="ins_estadual", nullable = false)
     private String insEstadual;
+
+    @Column(name="cpf", nullable = false)
+    private String cpf;
 
     //incluirFornecedor()  void
     //atualizarFornecedor()  void
