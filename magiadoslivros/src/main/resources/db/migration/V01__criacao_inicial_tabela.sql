@@ -30,6 +30,18 @@ FOREIGN KEY (id_usuario)
         ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS livro (
+id INT AUTO_INCREMENT,
+nome VARCHAR(255) NOT NULL,
+descricao VARCHAR(150) NOT NULL,
+localizacao_estoque VARCHAR(150) NOT NULL,
+isbn INT NOT NULL,
+valor_venda DOUBLE NOT NULL,
+valor_recebimento DOUBLE NOT NULL,
+quantidade_livro INT NOT NULL, 
+PRIMARY KEY (id)
+);
+
 CREATE TABLE IF NOT EXISTS fornecedor (
 id INT AUTO_INCREMENT,
 nome_fantasia VARCHAR(255),
@@ -48,24 +60,13 @@ FOREIGN KEY (id_livro)
         ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
-CREATE TABLE IF NOT EXISTS livro (
-id INT AUTO_INCREMENT,
-nome VARCHAR(255) NOT NULL,
-descricao VARCHAR(150) NOT NULL,
-localizacao_estoque VARCHAR(150) NOT NULL,
-isbn INT NOT NULL,
-valor_venda DOUBLE NOT NULL,
-valor_recebimento DOUBLE NOT NULL,
-quantidade_livro INT NOT NULL
-);
-
 CREATE TABLE IF NOT EXISTS pedido_livro (
-id_livro INT PRIMARY KEY,
-id_pedido INT PRIMARY KEY,
+id_livro INT,
+id_pedido INT,
 FOREIGN KEY (id_livro)
         REFERENCES livro (id)
         ON UPDATE RESTRICT ON DELETE CASCADE,
-FOREIGN KEY (id_venda)
+FOREIGN KEY (id_pedido)
         REFERENCES pedido (id)
         ON UPDATE RESTRICT ON DELETE CASCADE
 );
